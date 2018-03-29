@@ -95,7 +95,7 @@ for t in reversed(d.entries):
 
         #h = BeautifulSoup(t.summary_detail.value, "html.parser")
         c = t.title
-        if t.author != '(%s)' % twitter:
+        if t.author != '(@%s)' % twitter:
             c = ("RT %s\n" % t.author[1:-1]) + c
         toot_media = []
         # get the pictures...
